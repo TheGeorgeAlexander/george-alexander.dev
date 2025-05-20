@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unknown page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/assets/style.css">
+        <style>
+            body {
+                height: 100vh;
+                text-align: center;
+                padding: 0;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #header {
+                font-size: 1.3em;
+                margin-bottom: 50px;
+            }
+
+            #url-container {
+                position: relative;
+                width: 100%;
+                flex-grow: 1;
+            }
+
+            #url-container > * {
+                position: absolute;
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <h2>You landed on an unknown page</h2>
+            <p>Click <a href="/">here</a> to go to the home page, or was it <a href="/">here</a>?</p>
+        </div>
+        <div id="url-container">
+            ${data.urlElements}
+        </div>
+    </body>
+</html>

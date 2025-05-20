@@ -1,0 +1,63 @@
+:root {
+    --background: #1e252f;
+    --background-secondary: #2a333f;
+    --color: #d0d8e1;
+    --link-color: #57baee;
+    --first-accent: #5aa0e0;
+    --second-accent: #8bd19e;
+    --error-color: #e06d7f;
+}
+
+::-moz-selection {
+    background: var(--color);
+    color: var(--background);
+}
+
+::selection {
+    background: var(--color);
+    color: var(--background);
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+    height: 7.5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-secondary);
+    border-radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(/assets/Inter.woff2) format("woff2");
+    font-style: oblique 0deg 20deg;
+    font-display: swap;
+}
+
+body {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--color);
+    margin: 20px auto;
+    overflow-x: hidden;
+    padding: 0 10px;
+    max-width: 1500px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
