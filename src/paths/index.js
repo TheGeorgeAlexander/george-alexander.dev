@@ -81,8 +81,8 @@ function timeAgo(date) {
     const diffInMonth = Math.floor(diffInDay / 30);
     const diffInYear = Math.floor(diffInDay / 365);
 
-    if(diffInSec < 60) {
-        return `${diffInSec} sec ago`;
+    if(diffInSec < 200) {
+        return `just now`;
     } else if(diffInMin < 60) {
         return `${diffInMin} min ago`;
     } else if(diffInHour < 24) {
